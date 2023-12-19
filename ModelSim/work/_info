@@ -1,0 +1,111 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+Eatm_machine
+Z0 w1702980791
+Z1 DPx4 work 14 atm_prototypes 0 22 d1Hn?JmQ3[D:[^A5Dz8_g3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z5 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 18
+Z8 dC:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/ModelSim
+Z9 8C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_machine.vhd
+Z10 FC:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_machine.vhd
+l0
+L8 1
+VaKPiQ:I1Llb2Ih?A8M4EY2
+!s100 52XzBoR2bj`lWAEBei5CQ1
+Z11 OV;C;2020.1;71
+32
+Z12 !s110 1702980863
+!i10b 1
+Z13 !s108 1702980863.000000
+Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_machine.vhd|
+Z15 !s107 C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_machine.vhd|
+!i113 1
+Z16 o-work work -2002 -explicit
+Z17 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+Z18 DEx4 work 11 atm_machine 0 22 aKPiQ:I1Llb2Ih?A8M4EY2
+!i122 18
+l106
+Z19 L35 252
+Z20 VCgL971diWcJb4jodF6C<U3
+Z21 !s100 HCBia<l2]k@G[NgSCiRlO1
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Patm_prototypes
+R2
+R3
+R4
+R5
+R6
+R7
+!i122 0
+Z22 w1702979690
+R8
+Z23 8C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_prototypes.vhd
+Z24 FC:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_prototypes.vhd
+l0
+L7 1
+Vd1Hn?JmQ3[D:[^A5Dz8_g3
+!s100 E`RPT83a`ECPYM<a4m=OA3
+R11
+32
+Z25 !s110 1702979723
+!i10b 1
+Z26 !s108 1702979723.000000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_prototypes.vhd|
+Z28 !s107 C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_prototypes.vhd|
+!i113 1
+R16
+R17
+Bbody
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+!i122 0
+l0
+L46 1
+VgbcD2=8gj5^S^Oi;@>hMf3
+!s100 JaeSEOi6YbnnW2WfgGW282
+R11
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R16
+R17
