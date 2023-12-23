@@ -64,9 +64,7 @@ architecture rtl of atm_machine is
         port(
             pin_code : in password_type;
             clock : in std_logic;
-
             encrypted_pin_code : out STD_LOGIC_VECTOR(55 DOWNTO 0)
-
         );
     end component encryption;
 

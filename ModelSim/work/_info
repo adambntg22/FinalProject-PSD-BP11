@@ -18,21 +18,21 @@ Z4 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
 Z5 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 18
-Z8 dC:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/ModelSim
-Z9 8C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_machine.vhd
-Z10 FC:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_machine.vhd
+!i122 6
+Z8 dC:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/ModelSim
+Z9 8C:\Users\Mfauzan\Documents\Kuliah\Semester 3\PSD\PROYEK AKHIR PSD\atm_machine.vhd
+Z10 FC:\Users\Mfauzan\Documents\Kuliah\Semester 3\PSD\PROYEK AKHIR PSD\atm_machine.vhd
 l0
 L8 1
 VaKPiQ:I1Llb2Ih?A8M4EY2
 !s100 52XzBoR2bj`lWAEBei5CQ1
 Z11 OV;C;2020.1;71
 32
-Z12 !s110 1702980863
+Z12 !s110 1703329592
 !i10b 1
-Z13 !s108 1702980863.000000
-Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_machine.vhd|
-Z15 !s107 C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_machine.vhd|
+Z13 !s108 1703329592.000000
+Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Mfauzan\Documents\Kuliah\Semester 3\PSD\PROYEK AKHIR PSD\atm_machine.vhd|
+Z15 !s107 C:\Users\Mfauzan\Documents\Kuliah\Semester 3\PSD\PROYEK AKHIR PSD\atm_machine.vhd|
 !i113 1
 Z16 o-work work -2002 -explicit
 Z17 tExplicit 1 CvgOpt 0
@@ -45,7 +45,7 @@ R5
 R6
 R7
 Z18 DEx4 work 11 atm_machine 0 22 aKPiQ:I1Llb2Ih?A8M4EY2
-!i122 18
+!i122 6
 l106
 Z19 L35 252
 Z20 VCgL971diWcJb4jodF6C<U3
@@ -60,6 +60,57 @@ R15
 !i113 1
 R16
 R17
+Eatm_machine_tb
+Z22 w1703329118
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+!i122 4
+R8
+Z23 8C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/atm_machine_tb.vhd
+Z24 FC:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/atm_machine_tb.vhd
+l0
+L8 1
+VES]EU7EL2M@UZa684DjUV1
+!s100 fW1z0XgCIik@K<ZYjX]bL2
+R11
+32
+Z25 !s110 1703329157
+!i10b 1
+Z26 !s108 1703329157.000000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/atm_machine_tb.vhd|
+Z28 !s107 C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/atm_machine_tb.vhd|
+!i113 1
+R16
+R17
+Artl
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 14 atm_machine_tb 0 22 ES]EU7EL2M@UZa684DjUV1
+!i122 4
+l58
+L11 68
+V08324QdAMzW^c:AHeT:W?1
+!s100 bG@9OO:57iV9Bc9@Mm?`i3
+R11
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R16
+R17
 Patm_prototypes
 R2
 R3
@@ -68,21 +119,21 @@ R5
 R6
 R7
 !i122 0
-Z22 w1702979690
+Z29 w1702979690
 R8
-Z23 8C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_prototypes.vhd
-Z24 FC:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_prototypes.vhd
+Z30 8C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/atm_prototypes.vhd
+Z31 FC:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/atm_prototypes.vhd
 l0
 L7 1
 Vd1Hn?JmQ3[D:[^A5Dz8_g3
 !s100 E`RPT83a`ECPYM<a4m=OA3
 R11
 32
-Z25 !s110 1702979723
+Z32 !s110 1703328630
 !i10b 1
-Z26 !s108 1702979723.000000
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_prototypes.vhd|
-Z28 !s107 C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/FinalProject-PSD-BP11/atm_prototypes.vhd|
+Z33 !s108 1703328630.000000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/atm_prototypes.vhd|
+Z35 !s107 C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/atm_prototypes.vhd|
 !i113 1
 R16
 R17
@@ -101,11 +152,158 @@ VgbcD2=8gj5^S^Oi;@>hMf3
 !s100 JaeSEOi6YbnnW2WfgGW282
 R11
 32
-R25
+R32
 !i10b 1
-R26
-R27
-R28
+R33
+R34
+R35
+!i113 1
+R16
+R17
+Eencryption
+Z36 w1703329441
+R4
+R1
+R2
+R3
+R5
+R6
+R7
+!i122 5
+R8
+Z37 8C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/encryption.vhd
+Z38 FC:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/encryption.vhd
+l0
+L10 1
+V6l?m8kadNXYGkdXPC1l<B3
+!s100 D_HkkgcOgVedEiKP1568H2
+R11
+32
+Z39 !s110 1703329501
+!i10b 1
+Z40 !s108 1703329501.000000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/encryption.vhd|
+Z42 !s107 C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/encryption.vhd|
+!i113 1
+R16
+R17
+Abehavioral
+R4
+R1
+R2
+R3
+R5
+R6
+R7
+DEx4 work 10 encryption 0 22 6l?m8kadNXYGkdXPC1l<B3
+!i122 5
+l35
+L20 124
+VIo^<R=kGfImlJZMO:C6GK3
+!s100 HbfA]`]<[9GJQG?:lC^:>2
+R11
+32
+R39
+!i10b 1
+R40
+R41
+R42
+!i113 1
+R16
+R17
+Epin_changer
+Z43 w1703327837
+R2
+R3
+R1
+R4
+R5
+R6
+R7
+!i122 2
+R8
+Z44 8C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/pin_changer.vhd
+Z45 FC:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/pin_changer.vhd
+l0
+L7 1
+V[c@2OjV[42cX37;Q52W4d2
+!s100 9PjCNJG@Fc^D_X_1f4d;O2
+R11
+32
+Z46 !s110 1703328634
+!i10b 1
+Z47 !s108 1703328634.000000
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/pin_changer.vhd|
+Z49 !s107 C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/pin_changer.vhd|
+!i113 1
+R16
+R17
+Artl
+R2
+R3
+R1
+R4
+R5
+R6
+R7
+DEx4 work 11 pin_changer 0 22 [c@2OjV[42cX37;Q52W4d2
+!i122 2
+l18
+L16 11
+VkIBcLieceRaa;c0Qh@iVW3
+!s100 m^B2J8;f2M1z`TN_6[LcV0
+R11
+32
+R46
+!i10b 1
+R47
+R48
+R49
+!i113 1
+R16
+R17
+Esetor
+Z50 w1703327880
+R4
+R5
+R6
+R7
+!i122 1
+R8
+Z51 8C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/depositC.vhd
+Z52 FC:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/depositC.vhd
+l0
+L6 1
+VZ1_b^mKG6]=<boj^<hbWX2
+!s100 WKaij3mOC5j78fz6Kmo^G3
+R11
+32
+Z53 !s110 1703328633
+!i10b 1
+Z54 !s108 1703328633.000000
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/depositC.vhd|
+Z56 !s107 C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/depositC.vhd|
+!i113 1
+R16
+R17
+Artl
+R4
+R5
+R6
+R7
+DEx4 work 5 setor 0 22 Z1_b^mKG6]=<boj^<hbWX2
+!i122 1
+l22
+L18 57
+V0kL`CmjomPlE6:Z_`Q_Lj0
+!s100 VO4VDEXI<W8NT]o5UelAn3
+R11
+32
+R53
+!i10b 1
+R54
+R55
+R56
 !i113 1
 R16
 R17
