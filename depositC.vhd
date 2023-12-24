@@ -3,43 +3,43 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.math_real.all;
 
-entity setor is
+entity depositC is
     port (
-        clk : in std_logic;
-        saldoAwal : in INTEGER;
+        clock : in std_logic;
+        oldBalance : in INTEGER;
         nominal : in integer;
-        setoran : in integer;
+        deposit : in integer;
         but_pecahan : in std_logic_vector (6 downto 0);
-        saldoAkhir : out INTEGER;
-        kembali : out integer
+        newBalance : out INTEGER;
+        change : out integer
     );
-end entity setor;
+end entity depositC;
 
-architecture rtl of setor is
+architecture rtl of depositC is
     signal CurrState, NextState : integer range 0 to 2 := 0;
     signal temp_return : integer;
 
 begin
-    process (clk)
+    process (clock)
     begin
-        if(rising_edge(clk)) then
+        if(rising_edge(clock)) then
             case CurrState is
                 when 0 =>
                     temp_return <= 0;
-                    if(nominal > 0 and setoran > 0) then
+                    if(nominal > 0 and deposit > 0) then
                         NextState <= 1;
                     else
                         NextState <= 0;
                     end if;
                 when 1 =>
-                    if(nominal > setoran) then
-                        temp_return <= nominal - setoran;
+                    if(nominal > deposit) then
+                        temp_return <= nominal - deposit;
                         NextState <= 2;
                     else
                         NextState <= 0;
                     end if;
                 when 2 =>
-                    -- saldoAkhir <= nominal;
+                    -- newBalance <= nominal;
                     if(but_pecahan = "0000001") then
                         temp_return <= temp_return - 1000;
                     elsif (but_pecahan = "0000010") then
@@ -61,12 +61,12 @@ begin
             end case;
         end if;
     end process;
-    saldoAkhir <= saldoAwal + setoran;
-    kembali <= temp_return;
+    newBalance <= oldBalance + deposit;
+    change <= temp_return;
     
-    process(clk)
+    process(clock)
     begin
-        if(clk = '1') then
+        if(clock = '1') then
             CurrState <= NextState;
         end if;
     end process;
