@@ -35,11 +35,11 @@ end entity atm_machine;
 architecture rtl of atm_machine is
     TYPE state_type is (IDLE, PIN_CHANGE, ENTER_PIN, ATTEMPT_PIN_1, ATTEMPT_PIN_2, ATTEMPT_PIN_3, READY, DEPOSIT, WITHDRAWAL);
     SIGNAL state : state_type;
-    SIGNAL AccPin1 : password_type := (1, 8, 2, 5, 3, 1); -- PIN milik akun 00 adalah 182531
-    SIGNAL AccPin2 : password_type := (7, 0, 8, 8, 1, 2); -- PIN milik akun 01 adalah 708812
-    SIGNAL AccPin3 : password_type := (6, 1, 9, 2, 7, 4); -- PIN milik akun 10 adalah 619274
-    SIGNAL AccPin4 : password_type := (3, 5, 1, 4, 9, 9); -- PIN milik akun 11 adalah 351499
-    SIGNAL balance_database : balance_type := (100_000, 80_000, 0, 2_000); -- Database balance sesuai index akun
+    SIGNAL AccPin1 : password_type := (1, 8, 2, 5, 3, 1); -- PIN milik akun 1 (00) adalah 182531
+    SIGNAL AccPin2 : password_type := (7, 0, 8, 8, 1, 2); -- PIN milik akun 2 (01) adalah 708812
+    SIGNAL AccPin3 : password_type := (6, 1, 9, 2, 7, 4); -- PIN milik akun (10) adalah 619274
+    SIGNAL AccPin4 : password_type := (3, 5, 1, 4, 9, 9); -- PIN milik akun (11) adalah 351499
+    SIGNAL balance_database : balance_type := (100_000, 50_000, 0, 5_000); -- Database balance sesuai index akun
 
     -- pinDatabase(0) = PIN akun 1 -> 182531 (PIN awal)
     -- pinDatabase(1) = PIN akun 2 -> 708812 (PIN awal)
@@ -47,6 +47,7 @@ architecture rtl of atm_machine is
     -- pinDatabase(3) = PIN akun 4 -> 351499 (PIN awal)
     SIGNAL pinDatabase : passwordArrays := (AccPin1, AccPin2, AccPin3, AccPin4);
 
+    -- Signal Pin yang telah tereknkripsi
     SIGNAL encryptedPin : STD_LOGIC_VECTOR(55 DOWNTO 0);
 
     SIGNAL passwordUsage : password_type;
@@ -60,6 +61,7 @@ architecture rtl of atm_machine is
     SIGNAL newBalanceAfterDeposit : integer;
     SIGNAL newBalanceAfterWithdrawal : integer;
 
+    -- Deklarasi Component Encryption
     component encryption is 
         port(
             pin_code : in password_type;
@@ -68,6 +70,7 @@ architecture rtl of atm_machine is
         );
     end component encryption;
 
+    -- Deklarasi Component Pin Changer
     component pin_changer is
         port(
             clock : in std_logic;
@@ -77,6 +80,7 @@ architecture rtl of atm_machine is
         );
     end component pin_changer;
 
+    -- Deklarasi Component Deposit
     component depositC is 
         port(
             clock : in std_logic;
@@ -89,6 +93,7 @@ architecture rtl of atm_machine is
         );
     end component depositC;
 
+    -- Deklarasi Componen Withdraw
     component withdraw is 
         port(
             clock : in std_logic;
@@ -103,19 +108,22 @@ architecture rtl of atm_machine is
 
 begin
 
+
+    --Pengecekan Pin Input dan Disesuaikan dengan Akun yang ada
     accountUsageIndexID <= 0 WHEN PIN_INPUT = pinDatabase(0) ELSE
                          1 WHEN PIN_INPUT = pinDatabase(1) ELSE
                          2 WHEN PIN_INPUT = pinDatabase(2) ELSE
                          3 WHEN PIN_INPUT = pinDatabase(3) ELSE
                          0;
 
-
+    -- Penyesuaian Akun yang ada dengan uang yang ada
     userBalance <= balance_database(0) when accountUsageIndexID = 0 else
                 balance_database(1) when accountUsageIndexID = 1 else
                 balance_database(2) when accountUsageIndexID = 2 else
                 balance_database(3) when accountUsageIndexID = 3 else
                 0;
 
+    -- Pass dengan menggunakan portmap
     ENCRYPT_PIN : encryption port map(passwordUsage, clock, encryptedPin);
     CHANGING_PIN : pin_changer port map(clock, passwordUsage, new_pin_input, new_pin);
     DEPOSIT_PROC : depositC port map(clock, userBalance, machine_nominal, deposit_nominal, buttonDeposit, newBalanceAfterDeposit, moneyChange);
@@ -147,7 +155,7 @@ begin
                         END IF;
                     end loop;
                     IF(validAccount = '1') THEN
-                        -- PANGGIL 
+                        -- MEMANGGIL 
                         -- COMPONENT ENCRYPTION
                         -- DI SINI
                         STATE <= READY;
@@ -165,7 +173,7 @@ begin
                         END IF;
                     end loop;
                     IF(validAccount = '1') THEN
-                        -- PANGGIL 
+                        -- MEMANGGIL 
                         -- COMPONENT ENCRYPTION
                         -- DI SINI
                         STATE <= READY;
@@ -183,7 +191,7 @@ begin
                         END IF;
                     end loop;
                     IF(validAccount = '1') THEN
-                        -- PANGGIL 
+                        -- MEMANGGIL 
                         -- COMPONENT ENCRYPTION
                         -- DI SINI
                         STATE <= READY;
@@ -201,7 +209,7 @@ begin
                         END IF;
                     end loop;
                     IF(validAccount = '1') THEN
-                        -- PANGGIL 
+                        -- MEMANGGIL 
                         -- COMPONENT ENCRYPTION
                         -- DI SINI
                         STATE <= READY;
