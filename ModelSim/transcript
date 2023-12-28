@@ -1,6 +1,9 @@
+# Compile of depositC.vhd was successful.
+# Compile of depositC.vhd was successful.
+# Compile of withdraw.vhd was successful.
 vsim -gui work.atm_machine
 # vsim -gui work.atm_machine 
-# Start time: 22:01:07 on Dec 24,2023
+# Start time: 13:20:31 on Dec 28,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -12,11 +15,93 @@ vsim -gui work.atm_machine
 # Loading work.atm_machine(rtl)
 # Loading work.encryption(behavioral)
 # Loading work.pin_changer(rtl)
-# ** Warning: (vsim-3473) Component instance "DEPOSIT_PROC : depositC" is not bound.
-#    Time: 0 ps  Iteration: 0  Instance: /atm_machine File: C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/atm_machine.vhd
-# ** Warning: (vsim-3473) Component instance "WITHDRAW_PROC : withdraw" is not bound.
-#    Time: 0 ps  Iteration: 0  Instance: /atm_machine File: C:/Users/Mfauzan/Documents/Kuliah/Semester 3/PSD/PROYEK AKHIR PSD/atm_machine.vhd
+# Loading work.depositc(rtl)
+# Loading work.withdraw(behavior_withdraw)
 add wave -position insertpoint sim:/atm_machine/*
+force -freeze sim:/atm_machine/clock 1 0, 0 {50 ps} -r 100
+force -freeze sim:/atm_machine/card_reader 1 0
+run
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 50 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 50 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 50 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 50 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 50 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 50 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 100 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 100 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 100 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 100 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 100 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 100 ps  Iteration: 0  Instance: /atm_machine/ENCRYPT_PIN
+force -freeze sim:/atm_machine/pin_input(0) 1 0
+force -freeze sim:/atm_machine/pin_input(1) 8 0
+force -freeze sim:/atm_machine/pin_input(2) 2 0
+force -freeze sim:/atm_machine/pin_input(3) 5 0
+force -freeze sim:/atm_machine/pin_input(4) 3 0
+force -freeze sim:/atm_machine/pin_input(5) 1 0
+run
+noforce sim:/atm_machine/deposit_button
+force -freeze sim:/atm_machine/deposit_button 1 0
+force -freeze sim:/atm_machine/withdraw_button 0 0
+force -freeze sim:/atm_machine/continue_button 1 0
+force -freeze sim:/atm_machine/change_pin_button 0 0
+run
+force -freeze sim:/atm_machine/machine_nominal 20000 0
+force -freeze sim:/atm_machine/deposit_nominal 10000 0
+force -freeze sim:/atm_machine/buttonDeposit 0001000 0
+run
+force -freeze sim:/atm_machine/deposit_button 0 0
+force -freeze sim:/atm_machine/withdraw_button 1 0
+force -freeze sim:/atm_machine/withdraw_nominal 10000 0
+force -freeze sim:/atm_machine/buttonAmountWithdraw 0020000 0
+# ** UI-Msg: (vsim-3455) Can force arrays only if they are one-dimensional arrays of character enums.
+# 
+force -freeze sim:/atm_machine/buttonAmountWithdraw(0) 0 0
+force -freeze sim:/atm_machine/buttonAmountWithdraw(1) 0 0
+force -freeze sim:/atm_machine/buttonAmountWithdraw(2) 2 0
+force -freeze sim:/atm_machine/buttonAmountWithdraw(3) 0 0
+force -freeze sim:/atm_machine/buttonAmountWithdraw(4) 0 0
+force -freeze sim:/atm_machine/buttonAmountWithdraw(5) 0 0
+force -freeze sim:/atm_machine/buttonAmountWithdraw(6) 0 0
+run
+run
+force -freeze sim:/atm_machine/new_pin_input(0) 1 0
+force -freeze sim:/atm_machine/new_pin_input(1) 2 0
+force -freeze sim:/atm_machine/new_pin_input(2) 3 0
+force -freeze sim:/atm_machine/new_pin_input(3) 4 0
+force -freeze sim:/atm_machine/new_pin_input(4) 5 0
+force -freeze sim:/atm_machine/new_pin_input(5) 6 0
+force -freeze sim:/atm_machine/change_pin_button 1 0
+force -freeze sim:/atm_machine/withdraw_button 0 0
+force -freeze sim:/atm_machine/deposit_button 0 0
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 force -freeze sim:/atm_machine/clock 1 0, 0 {50 ps} -r 100
 force -freeze sim:/atm_machine/reset 0 0
 force -freeze sim:/atm_machine/card_reader 1 0
@@ -77,10 +162,6 @@ force -freeze sim:/atm_machine/continue_button 1 0
 force -freeze sim:/atm_machine/change_pin_button 0 0
 run
 run
+force -freeze sim:/atm_machine/deposit_nominal 30000 0
 force -freeze sim:/atm_machine/machine_nominal 50000 0
-force -freeze sim:/atm_machine/deposit_nominal 40000 0
-force -freeze sim:/atm_machine/buttonDeposit 0001000 0
-run
-force -freeze sim:/atm_machine/newBalanceAfterDeposit 140000 0
-run
 run
